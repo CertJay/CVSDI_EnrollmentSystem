@@ -199,3 +199,123 @@ body {
 .forgot-container p a:hover {
     color: #3e8e41;
 }
+
+/* NAVBAR FOR LANDING PAGE */
+
+.navbar {
+    background-color: #5e3131;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+.navbar .logo {
+    float: left;
+    margin-right: 20px;
+    padding-left: 20px;
+}
+
+.navbar .logo img {
+    width: 100px;
+    height: 100px;
+}
+
+@media (max-width: 768px) {
+    .navbar .logo {
+        float: none;
+        display: block;
+        justify-content: center;
+    }
+}
+
+.navbar .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    flex-direction:row;
+}
+
+.navbar .nav-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .nav-links a:hover {
+    color: #ccc;
+}
+
+.navbar .enroll-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.navbar .enroll-btn:hover {
+    background-color: #3e8e41;
+}
+
+.search-bar {
+    margin-top: 10px;
+    padding: 10px;
+
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 16px;
+
+
+}
+
+
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    transition: width 0.3s ease;
+    color: #ffffff;
+    padding-left: 30px;
+    border-radius: 5px 0 0 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-right: 10px;
+
+}
+.search-button {
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+
+}
+.search-button:hover {
+    background-color: #555555; /* Dark gray background on hover */
+    color: #e0e0e0; /* Light gray text on hover */
+}
+
+.search-button:active {
+    background-color: #333333; /* Even darker gray background when active */
+    color: #cccccc; /* Slightly lighter gray text when active */
+}
