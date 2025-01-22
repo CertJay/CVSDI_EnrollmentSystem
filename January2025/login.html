@@ -24,17 +24,30 @@
                 </div>
                 <div class="input-group">
                     <label for="password">Password</label>
-                    <input type="password" id="password" required>
-                </div>
+            
+                        <input type="password" id="password" required>
+                        <button type="button" id="toggle-password" class="btn btn-outline-secondary">👁️</button>
+                    </div>
+                
                 <button class="buttonLogin" type="submit">Login</button>
                 <p>Don't have an account? <a href="signup.html">Sign up</a></p>
-                <p><a href="forgotpassword.html"> Forgot Password?</a> </a></p>
+                <p><a href="forgotpassword.html"> Forgot Password?</a> </p>
             </form>
         </div>
     </div>
 
-
-
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<script>
+    document.getElementById('toggle-password').addEventListener('click', function() {
+        var passwordInput = document.getElementById('password');
+        var type = passwordInput.type === 'password' ? 'text' : 'password';
+        passwordInput.type = type;
+        
+        // Toggle the eye icon (you can replace the text with an icon if needed)
+        this.textContent = type === 'password' ? '👁️' : '🙈';
+    });
+</script>
+
 </html>
